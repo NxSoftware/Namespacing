@@ -13,6 +13,10 @@
 		AAF5E0741AC1F1F3004DBFB4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAF5E0731AC1F1F3004DBFB4 /* Images.xcassets */; };
 		AAF5E0771AC1F1F3004DBFB4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAF5E0751AC1F1F3004DBFB4 /* LaunchScreen.xib */; };
 		AAF5E0831AC1F1F3004DBFB4 /* NamespacingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5E0821AC1F1F3004DBFB4 /* NamespacingTests.swift */; };
+		AAF5E08E1AC1F232004DBFB4 /* SteveWilford.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5E08D1AC1F232004DBFB4 /* SteveWilford.swift */; };
+		AAF5E0931AC1F427004DBFB4 /* SWNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5E0921AC1F427004DBFB4 /* SWNetworking.swift */; };
+		AAF5E0951AC1F5DF004DBFB4 /* SWHTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5E0941AC1F5DF004DBFB4 /* SWHTTP.swift */; };
+		AAF5E0991AC1F797004DBFB4 /* SWFTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF5E0981AC1F797004DBFB4 /* SWFTP.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		AAF5E07C1AC1F1F3004DBFB4 /* NamespacingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NamespacingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF5E0811AC1F1F3004DBFB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAF5E0821AC1F1F3004DBFB4 /* NamespacingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamespacingTests.swift; sourceTree = "<group>"; };
+		AAF5E08D1AC1F232004DBFB4 /* SteveWilford.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SteveWilford.swift; path = Namespacing/SteveWilford.swift; sourceTree = "<group>"; };
+		AAF5E0921AC1F427004DBFB4 /* SWNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SWNetworking.swift; path = Namespacing/SWNetworking.swift; sourceTree = "<group>"; };
+		AAF5E0941AC1F5DF004DBFB4 /* SWHTTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SWHTTP.swift; path = Namespacing/SWHTTP.swift; sourceTree = "<group>"; };
+		AAF5E0981AC1F797004DBFB4 /* SWFTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SWFTP.swift; path = Namespacing/SWFTP.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +67,8 @@
 		AAF5E05E1AC1F1F3004DBFB4 = {
 			isa = PBXGroup;
 			children = (
-				AAF5E0691AC1F1F3004DBFB4 /* Namespacing */,
+				AAF5E08C1AC1F215004DBFB4 /* Namespaced Source Files */,
+				AAF5E0691AC1F1F3004DBFB4 /* App */,
 				AAF5E07F1AC1F1F3004DBFB4 /* NamespacingTests */,
 				AAF5E0681AC1F1F3004DBFB4 /* Products */,
 			);
@@ -74,7 +83,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AAF5E0691AC1F1F3004DBFB4 /* Namespacing */ = {
+		AAF5E0691AC1F1F3004DBFB4 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				AAF5E06C1AC1F1F3004DBFB4 /* AppDelegate.swift */,
@@ -84,6 +93,7 @@
 				AAF5E0751AC1F1F3004DBFB4 /* LaunchScreen.xib */,
 				AAF5E06A1AC1F1F3004DBFB4 /* Supporting Files */,
 			);
+			name = App;
 			path = Namespacing;
 			sourceTree = "<group>";
 		};
@@ -110,6 +120,25 @@
 				AAF5E0811AC1F1F3004DBFB4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAF5E08C1AC1F215004DBFB4 /* Namespaced Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAF5E08D1AC1F232004DBFB4 /* SteveWilford.swift */,
+				AAF5E0911AC1F418004DBFB4 /* Networking */,
+			);
+			name = "Namespaced Source Files";
+			sourceTree = "<group>";
+		};
+		AAF5E0911AC1F418004DBFB4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AAF5E0921AC1F427004DBFB4 /* SWNetworking.swift */,
+				AAF5E0941AC1F5DF004DBFB4 /* SWHTTP.swift */,
+				AAF5E0981AC1F797004DBFB4 /* SWFTP.swift */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +242,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAF5E06F1AC1F1F3004DBFB4 /* ViewController.swift in Sources */,
+				AAF5E08E1AC1F232004DBFB4 /* SteveWilford.swift in Sources */,
+				AAF5E0991AC1F797004DBFB4 /* SWFTP.swift in Sources */,
+				AAF5E0931AC1F427004DBFB4 /* SWNetworking.swift in Sources */,
 				AAF5E06D1AC1F1F3004DBFB4 /* AppDelegate.swift in Sources */,
+				AAF5E0951AC1F5DF004DBFB4 /* SWHTTP.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
